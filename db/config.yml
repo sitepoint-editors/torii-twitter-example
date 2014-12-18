@@ -1,0 +1,16 @@
+development:
+    adapter: sqlite3
+    encoding: utf-8
+    database: db/db_dev_db.sqlite3
+    pool: 5
+    username: ENV["DB_USERNAME"]
+    password: ENV["DB_PASSWORD"]
+    
+test:
+    adapter: sqlite3
+    encoding: utf-8
+    database: db/db_dev_db.sqlite3
+    pool: 5
+    username: ENV["DB_USERNAME"]
+    password: ENV["DB_PASSWORD"]
+    
