@@ -1,0 +1,7 @@
+<h5>Index Template</h5>
+
+{{#if session.isAuthenticated }}
+  <p>currentUser: {{session.currentUser.name}} </p>
+{{else}}
+  <p>You need to sign in to view.</p>
+{{/if}}

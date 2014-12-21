@@ -19,4 +19,6 @@ gem "shoulda", group: [:test]
 
 gem "active_record_migrations"
 gem "guard", group: [:development]
+gem "guard-rack", group: [:development]
+gem "guard-bundler", group: [:development]
 gem "rack-livereload", group: [:development]

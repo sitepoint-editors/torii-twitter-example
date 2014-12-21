@@ -1,0 +1,19 @@
+<h4>
+  EmberJS Torii Example
+</h4>
+
+{{#if session.isWorking }}
+  Working..
+{{else}}
+
+  {{#if session.isAuthenticated }}
+    <p>Welcome {{session.currentUser.name}}
+      <a href="#" {{action 'logout'}}>Logout</a>
+    </p>
+  {{else}}
+    {{#link-to 'login'}}Sign-in{{/link-to}}
+  {{/if}}
+
+{{/if}}
+
+{{outlet}}
